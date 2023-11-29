@@ -15,10 +15,10 @@ class Calculator {
     }
 
     div(a: number, b: number): number {
-        if (a / b == 0) {
-            throw new Error(" Zero cannot be divided")
+        if (b == 0 ||a ==0) {
+            throw new Error("Zero cannot be divided")
         }
-        return a + b;
+        return a / b;
     }
 
 
