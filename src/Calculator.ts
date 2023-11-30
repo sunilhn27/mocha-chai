@@ -21,6 +21,15 @@ class Calculator {
         return a / b;
     }
 
+    asyncFunction() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(5);
+            }, 1000);
+        });
+    }
+    
+
 
 }
 
